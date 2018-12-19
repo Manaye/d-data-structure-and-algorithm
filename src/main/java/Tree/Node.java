@@ -1,47 +1,45 @@
 package Tree;
 
-  public class Node {
+  public class Node<T> {
 
-    private int value;
-    private Node left;
-    private Node right;
+      public T value;
+      private Node left;
+      private Node right;
 
-    public Node (int value) {
-        this(value, null, null);
-    }
+      public Node(T value) {
+          this(value, null, null);
+      }
 
-    public Node(int value, Node left, Node right) {
-        this.value = value;
-        this.left = left;
-        this.right = right;
-    }
+      public Node(T value, Node left, Node right) {
+          this.value = value;
+          this.left = left;
+          this.right = right;
+      }
 
-    public int getValue() {
-        return value;
-    }
+      public T getValue() {
+          return value;
+      }
 
-    public Node getLeft() {
-        return left;
-    }
+      public Node getLeft() {
+          return left;
+      }
 
-    public Node getRight() {
-        return right;
-    }
+      public Node getRight() {
+          return right;
+      }
 
-    public void setLeft(Node left) {
-        this.left = left;
-    }
+      public void setLeft(Node<Object> left) {
+          this.left = left;
+      }
 
-    public void setRight(Node right) {
-        this.right = right;
-    }
+      public void setRight(Node<Object> right) {
+          this.right = right;
+      }
+  }
 
-    public boolean equals(Object other) {
-        if (other == null)
-            return false;
-        if (getClass() != other.getClass())
-            return false;
-        Node otherNode  = (Node)other;
-        return value == otherNode.getValue();
-    }
-}
+
+
+
+
+
+

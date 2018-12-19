@@ -3,8 +3,8 @@ package Tree;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BinaryTree {
-
+public class BinaryTree<T> {
+  public Node<T> root;
     public static List<Node> inOrder(Node root) {
         if (root == null) {
             return new ArrayList<>();

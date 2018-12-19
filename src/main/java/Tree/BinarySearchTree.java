@@ -6,7 +6,7 @@ public class BinarySearchTree {
 
 
     public static void add(Node root, int value) {
-        if (value <= root.getValue()) {
+        if (value <= (int)root.getValue()) {
             if (root.getLeft() == null)
                 root.setLeft(new Node(value));
             else
@@ -22,9 +22,9 @@ public class BinarySearchTree {
     public static Node search(Node root, int value) {
         if (root == null)
             return null;
-        if (root.getValue() == value)
+        if ((int)root.getValue() == value)
             return root;
-        else if (value < root.getValue())
+        else if (value < (int)root.getValue())
             return search(root.getLeft(), value);
         else
             return search(root.getRight(), value);

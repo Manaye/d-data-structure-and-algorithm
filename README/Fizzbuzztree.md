@@ -8,4 +8,5 @@ Write a function called fuzzbuzztree which takes a tree as an argument
 the Big O space/time for this approach is O(n)
 
 ## Solution
-<!-- Embedded whiteboard image -->
+
+![](./asset/ll_insertion.jpg)
